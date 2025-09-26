@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+body h1{
+    background-color: #ff6f00;
+    padding: 20px;
+    margin: 20px 20px;
+    color: red;
+    border: 4px solid darkred;
+    text-shadow: 2px 2px 4px black;
+}
+
+.recipe {
+    background-color: lightgreen;
+    color: darkgreen;
+    font-size: 20px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+}
