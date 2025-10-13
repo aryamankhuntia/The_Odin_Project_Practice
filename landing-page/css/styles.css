@@ -81,3 +81,117 @@ body {
 }
 
 /* Information Section Styles */
+
+.info-section {
+  text-align: center;
+  padding: 30px 200px 60px 200px;
+}
+
+.info-section h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 40px;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.info {
+  width: 150px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3882f6;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.info p{
+    font-size: 18px;
+    color: grey;
+}
+
+/* Quote Section Styles */
+.quote-section {
+    background-color: #e5e7eb;
+    padding: 60px 290px;
+    text-align: left;
+}
+
+.quote-section h1 {
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quote-section p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 5px;
+    color: black;
+}
+
+/* Call To Action Section Styles */
+
+.cta {
+    padding: 60px 200px;
+}
+
+.cta-box {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 40px 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.cta-box h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.cta-box p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.79);
+}
+
+.cta-box button {
+    background-color: transparent;
+    border: 2px solid #f9faf8;
+    color: #f9faf8;
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Footer Styles */
+
+.footer {
+  background-color: #1f2937;
+  color: rgba(255, 255, 255, 0.824);
+  text-align: center;
+  padding: 30px;
+}
+
+.footer h1 {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
