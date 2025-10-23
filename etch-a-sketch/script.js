@@ -50,7 +50,17 @@ function createGrid(size){
             el.style.boxSizing = "border-box";
             el.style.aspectRatio = "1/1";
             el.addEventListener("mouseenter", () => {
-                el.style.backgroundColor = `rgb(${randomInt(0,255)},${randomInt(0,255)},${randomInt(0,255)})`;
+                if (!el.dataset.opacity){
+                    const r = randomInt(0,255);
+                    const g = randomInt(0,255);
+                    const b = randomInt(0,255);
+                    el.dataset.color = `${r},${g},${b}`;
+                    el.dataset.opacity = 0.1;
+                }
+                else{
+                    el.dataset.opacity = Math.min((1,parseFloat(el.dataset.opacity)+0.1));
+                };
+                el.style.backgroundColor = `rgba(${el.dataset.color},${el.dataset.opacity})`;
             });
             currdiv.push(el);
             row.appendChild(el)
