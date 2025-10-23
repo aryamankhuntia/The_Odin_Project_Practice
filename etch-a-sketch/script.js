@@ -26,7 +26,10 @@ function createGrid(size){
     container.style.margin ="20px";
     container.style.border = "3px solid black";
     container.style.aspectRatio = "1/1";
-    container.style.boxSizing = "border-box";   
+    container.style.boxSizing = "border-box";
+    function randomInt(min,max){
+        return Math.floor(Math.random()*(max-min+1)+min);
+    }   
 
     let div = [];
     for (let i=0;i<size;i++){
@@ -47,7 +50,7 @@ function createGrid(size){
             el.style.boxSizing = "border-box";
             el.style.aspectRatio = "1/1";
             el.addEventListener("mouseenter", () => {
-                el.style.backgroundColor = "blue";
+                el.style.backgroundColor = `rgb(${randomInt(0,255)},${randomInt(0,255)},${randomInt(0,255)})`;
             });
             currdiv.push(el);
             row.appendChild(el)
